@@ -1,5 +1,8 @@
 {
   "docs": [
     "https://docs.aave.com/developers"
-  ]
+  ],
+  "deployment": {
+    "ref": "https://github.com/aave/aave-v3-deploy/tree/main"
+  }
 }
