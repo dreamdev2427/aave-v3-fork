@@ -58,6 +58,12 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
     await aclManager.connect(aclAdminSigner).addPoolAdmin(poolAdmin)
   );
 
+  // [DAVID]
+  const davidWallet = '0xE495AC8fc33fC8855A516d42dc4A563cd86D9045'
+  await waitForTx(
+    await aclManager.connect(aclAdminSigner).addPoolAdmin(davidWallet)
+  );
+
   // 5. Add EmergencyAdmin  to ACLManager contract
   await waitForTx(
     await aclManager.connect(aclAdminSigner).addEmergencyAdmin(emergencyAdmin)

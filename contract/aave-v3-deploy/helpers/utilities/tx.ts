@@ -11,6 +11,7 @@ import fs from "fs/promises";
 declare var hre: HardhatRuntimeEnvironment;
 
 export const waitForTx = async (tx: ContractTransaction) => await tx.wait(1);
+// export const waitForTx = async (tx: ContractTransaction) => {return} // [DAVID]
 
 export const getCurrentBlock = async () => {
   return (await hre.ethers.provider.getBlock("latest")).number;
@@ -193,3 +194,19 @@ export const getAddressFromJson = async (network: string, id: string) => {
   }
   throw `Missing artifact at ${artifactPath}`;
 };
+
+export async function getArtifactsFromJson(network: string): Promise<any[]> {
+  const dirName = `${__dirname}/../../deployments/${network}`
+  let fileList = await fs.readdir(dirName)
+  fileList = fileList.filter((fname: string) => path.extname(fname) === '.json')
+  const artifacts: any[] = []
+  for (const filename of fileList) {
+    try {
+      const artifact = await fs.readFile(`${dirName}/${filename}`, "utf8");
+      const artifactJson: any = JSON.parse(artifact);
+      if (artifactJson.address)
+        artifacts.push(artifactJson)
+    } catch (error) { }
+  }
+  return artifacts
+}

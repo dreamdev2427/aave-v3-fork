@@ -12,6 +12,7 @@ import {
   eFantomNetwork,
   eOptimismNetwork,
   eBaseNetwork,
+  eBscNetwork,
 } from "./types";
 
 require("dotenv").config();
@@ -98,6 +99,7 @@ export const NETWORKS_RPC_URL: iParamsPerNetwork<string> = {
   [eBaseNetwork.base]: `https://base-mainnet.g.alchemy.com/v2/${getAlchemyKey(
     eBaseNetwork.base
   )}`,
+  [eBscNetwork.testnet]: `https://data-seed-prebsc-2-s2.bnbchain.org:8545`
 };
 
 export const LIVE_NETWORKS: iParamsPerNetwork<boolean> = {
@@ -114,6 +116,7 @@ export const LIVE_NETWORKS: iParamsPerNetwork<boolean> = {
 const GAS_PRICE_PER_NET: iParamsPerNetwork<string | number> = {
   [eArbitrumNetwork.goerliNitro]: 100000001,
   [eBaseNetwork.baseGoerli]: 8000000000,
+  [eBscNetwork.testnet]: 15000000000,
 };
 
 export const buildForkConfig = ():
@@ -255,3 +258,4 @@ export const DETERMINISTIC_DEPLOYMENT = process.env.DETERMINISTIC_DEPLOYMENT
   : null;
 
 export const ETHERSCAN_KEY = process.env.ETHERSCAN_KEY || "";
+export const BSCSCAN_KEY = process.env.BSCSCAN_KEY || "";

@@ -15,6 +15,7 @@ import {
   loadPoolConfig,
   waitForTx,
 } from "../../helpers";
+import { Console } from "console";
 
 const func: DeployFunction = async function ({
   getNamedAccounts,
@@ -38,6 +39,7 @@ const func: DeployFunction = async function ({
     );
     return;
   }
+  
   const commonLibraries = await getPoolLibraries();
 
   // Deploy common Pool contract

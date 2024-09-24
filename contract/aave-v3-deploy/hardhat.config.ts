@@ -1,4 +1,5 @@
 import {
+  BSCSCAN_KEY,
   DETERMINISTIC_DEPLOYMENT,
   DETERMINISTIC_FACTORIES,
   ETHERSCAN_KEY,
@@ -15,6 +16,7 @@ import {
   eOptimismNetwork,
   ePolygonNetwork,
   eBaseNetwork,
+  eBscNetwork,
 } from "./helpers/types";
 import { DEFAULT_NAMED_ACCOUNTS } from "./helpers/constants";
 
@@ -127,6 +129,10 @@ export default {
       eBaseNetwork.baseGoerli,
       84531
     ),
+    [eBscNetwork.testnet]: getCommonNetworkConfig(
+      eBscNetwork.testnet,
+      97
+    ),
   },
   namedAccounts: {
     ...DEFAULT_NAMED_ACCOUNTS,
@@ -207,7 +213,10 @@ export default {
     ? DETERMINISTIC_FACTORIES
     : undefined,
   etherscan: {
-    apiKey: ETHERSCAN_KEY,
+    apiKey: {
+      [eEthereumNetwork.sepolia]: ETHERSCAN_KEY,
+      [eBscNetwork.testnet]: BSCSCAN_KEY
+    },
     customChains: [
       {
         network: eBaseNetwork.base,
@@ -215,6 +224,22 @@ export default {
         urls: {
           apiURL: "https://api.basescan.org/api",
           browserURL: "https://basescan.org/",
+        },
+      },
+      {
+        network: eEthereumNetwork.sepolia,
+        chainId: 11155111,
+        urls: {
+          apiURL: "https://api-sepolia.etherscan.io/api",
+          browserURL: "https://sepolia.etherscan.io/",
+        },
+      },
+      {
+        network: eBscNetwork.testnet,
+        chainId: 97,
+        urls: {
+          apiURL: "https://api-testnet.bscscan.com/api",
+          browserURL: "https://testnet.bscscan.com/",
         },
       },
     ],

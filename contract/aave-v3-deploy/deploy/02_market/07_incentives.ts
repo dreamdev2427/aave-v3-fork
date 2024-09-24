@@ -87,7 +87,6 @@ const func: DeployFunction = async function ({
 
   // Call to initialize at implementation contract to prevent others.
   await waitForTx(await incentivesImpl.initialize(ZERO_ADDRESS));
-
   // The Rewards Controller must be set at PoolAddressesProvider with id keccak256("INCENTIVES_CONTROLLER"):
   // 0x703c2c8634bed68d98c029c18f310e7f7ec0e5d6342c590190b3cb8b3ba54532
   const incentivesControllerId = hre.ethers.utils.keccak256(
@@ -163,11 +162,9 @@ const func: DeployFunction = async function ({
   }
 
   // Transfer emission manager ownership
-
   await waitForTx(
     await emissionManager.transferOwnership(incentivesEmissionManager)
   );
-
   return true;
 };
 
