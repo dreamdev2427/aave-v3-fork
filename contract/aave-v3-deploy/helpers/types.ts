@@ -44,6 +44,7 @@ export enum eEthereumNetwork {
   rinkeby = "rinkeby",
   goerli = "goerli",
   sepolia = "sepolia",
+  holesky = "holesky",
 }
 
 export enum eBaseNetwork {
@@ -77,8 +78,8 @@ export enum eHarmonyNetwork {
 }
 
 export enum eBscNetwork {
-  main = "bnb",
-  testnet = "bnb-testnet",
+  main = "bsc",
+  testnet = "bsc-testnet",
 }
 
 export enum EthereumNetworkNames {

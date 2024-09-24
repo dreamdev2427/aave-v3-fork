@@ -49,18 +49,26 @@ const func: DeployFunction = async function ({
     aTokenArtifact.abi,
     aTokenArtifact.address
   )) as AToken;
-  await waitForTx(
-    await aToken.initialize(
-      poolAddress, // initializingPool
-      ZERO_ADDRESS, // treasury
-      ZERO_ADDRESS, // underlyingAsset
-      ZERO_ADDRESS, // incentivesController
-      0, // aTokenDecimals
-      "ATOKEN_IMPL", // aTokenName
-      "ATOKEN_IMPL", // aTokenSymbol
-      "0x00" // params
-    )
-  );
+
+  try {
+    await waitForTx(
+      await aToken.initialize(
+        poolAddress, // initializingPool
+        ZERO_ADDRESS, // treasury
+        ZERO_ADDRESS, // underlyingAsset
+        ZERO_ADDRESS, // incentivesController
+        0, // aTokenDecimals
+        "ATOKEN_IMPL", // aTokenName
+        "ATOKEN_IMPL", // aTokenSymbol
+        "0x00" // params
+      )
+    );
+  } catch (error: any) {
+    if (error.reason && error.reason.includes('Contract instance has already been initialized'))
+      console.log(`[DAVID](AToken) Already initialized! continuing ...`)
+    else
+      throw error
+  }
 
   const delegationAwareATokenArtifact = await deploy(
     DELEGATION_AWARE_ATOKEN_IMPL_ID,
@@ -76,18 +84,25 @@ const func: DeployFunction = async function ({
     delegationAwareATokenArtifact.abi,
     delegationAwareATokenArtifact.address
   )) as DelegationAwareAToken;
-  await waitForTx(
-    await delegationAwareAToken.initialize(
-      poolAddress, // initializingPool
-      ZERO_ADDRESS, // treasury
-      ZERO_ADDRESS, // underlyingAsset
-      ZERO_ADDRESS, // incentivesController
-      0, // aTokenDecimals
-      "DELEGATION_AWARE_ATOKEN_IMPL", // aTokenName
-      "DELEGATION_AWARE_ATOKEN_IMPL", // aTokenSymbol
-      "0x00" // params
-    )
-  );
+  try {
+    await waitForTx(
+      await delegationAwareAToken.initialize(
+        poolAddress, // initializingPool
+        ZERO_ADDRESS, // treasury
+        ZERO_ADDRESS, // underlyingAsset
+        ZERO_ADDRESS, // incentivesController
+        0, // aTokenDecimals
+        "DELEGATION_AWARE_ATOKEN_IMPL", // aTokenName
+        "DELEGATION_AWARE_ATOKEN_IMPL", // aTokenSymbol
+        "0x00" // params
+      )
+    );
+  } catch (error: any) {
+    if (error.reason && error.reason.includes('Contract instance has already been initialized'))
+      console.log(`[DAVID](Pool Configuration) Already initialized! continuing ...`)
+    else
+      throw error
+  }
 
   const stableDebtTokenArtifact = await deploy(STABLE_DEBT_TOKEN_IMPL_ID, {
     contract: "StableDebtToken",
@@ -100,17 +115,24 @@ const func: DeployFunction = async function ({
     stableDebtTokenArtifact.abi,
     stableDebtTokenArtifact.address
   )) as StableDebtToken;
-  await waitForTx(
-    await stableDebtToken.initialize(
-      poolAddress, // initializingPool
-      ZERO_ADDRESS, // underlyingAsset
-      ZERO_ADDRESS, // incentivesController
-      0, // debtTokenDecimals
-      "STABLE_DEBT_TOKEN_IMPL", // debtTokenName
-      "STABLE_DEBT_TOKEN_IMPL", // debtTokenSymbol
-      "0x00" // params
-    )
-  );
+  try {
+    await waitForTx(
+      await stableDebtToken.initialize(
+        poolAddress, // initializingPool
+        ZERO_ADDRESS, // underlyingAsset
+        ZERO_ADDRESS, // incentivesController
+        0, // debtTokenDecimals
+        "STABLE_DEBT_TOKEN_IMPL", // debtTokenName
+        "STABLE_DEBT_TOKEN_IMPL", // debtTokenSymbol
+        "0x00" // params
+      )
+    );
+  } catch (error: any) {
+    if (error.reason && error.reason.includes('Contract instance has already been initialized'))
+      console.log(`[DAVID](stableDebtToken) Already initialized! continuing ...`)
+    else
+      throw error
+  }
 
   const variableDebtTokenArtifact = await deploy(VARIABLE_DEBT_TOKEN_IMPL_ID, {
     contract: "VariableDebtToken",
@@ -123,17 +145,24 @@ const func: DeployFunction = async function ({
     variableDebtTokenArtifact.abi,
     variableDebtTokenArtifact.address
   )) as VariableDebtToken;
-  await waitForTx(
-    await variableDebtToken.initialize(
-      poolAddress, // initializingPool
-      ZERO_ADDRESS, // underlyingAsset
-      ZERO_ADDRESS, // incentivesController
-      0, // debtTokenDecimals
-      "VARIABLE_DEBT_TOKEN_IMPL", // debtTokenName
-      "VARIABLE_DEBT_TOKEN_IMPL", // debtTokenSymbol
-      "0x00" // params
-    )
-  );
+  try {
+    await waitForTx(
+      await variableDebtToken.initialize(
+        poolAddress, // initializingPool
+        ZERO_ADDRESS, // underlyingAsset
+        ZERO_ADDRESS, // incentivesController
+        0, // debtTokenDecimals
+        "VARIABLE_DEBT_TOKEN_IMPL", // debtTokenName
+        "VARIABLE_DEBT_TOKEN_IMPL", // debtTokenSymbol
+        "0x00" // params
+      )
+    );
+  } catch (error: any) {
+    if (error.reason && error.reason.includes('Contract instance has already been initialized'))
+      console.log(`[DAVID](variableDebtToken) Already initialized! continuing ...`)
+    else
+      throw error
+  }
 
   return true;
 };

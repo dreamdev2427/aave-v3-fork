@@ -7,6 +7,7 @@ import {
   ePolygonNetwork,
   TransferStrategy,
   eBaseNetwork,
+  eBscNetwork,
 } from "./../../helpers/types";
 import { ZERO_ADDRESS } from "../../helpers/constants";
 import {
@@ -54,6 +55,16 @@ export const CommonsConfig: ICommonConfiguration = {
       WETH: ZERO_ADDRESS,
       USDT: ZERO_ADDRESS,
       EURS: ZERO_ADDRESS,
+    },
+    [eBscNetwork.main]: {
+      AAVE: "0xA8357BF572460fC40f4B0aCacbB2a6A61c89f475",
+      DAI: '0x132d3C0B1D2cEa0BC552588063bdBb210FDeecfA',
+      LINK: '0xca236E327F629f9Fc2c30A4E95775EbF0B89fac8',
+      USDC: '0x132d3C0B1D2cEa0BC552588063bdBb210FDeecfA',
+      WBTC: '0x264990fbd0A4796A3E3d8E37C4d5F87a3aCa5Ebf',
+      WETH: '0x9ef1B8c0E4F7dc8bF5719Ea496883DC6401d5b2e',
+      USDT: '0xB97Ad0E74fa7d920791E90258A6E2085088b4320',
+      EURS: '0x0bf79F617988C472DcA68ff41eFe1338955b9A80',
     },
   },
   ReserveFactorTreasuryAddress: {

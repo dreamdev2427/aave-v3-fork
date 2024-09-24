@@ -120,6 +120,10 @@ export default {
       eEthereumNetwork.sepolia,
       11155111
     ),
+    [eEthereumNetwork.holesky]: getCommonNetworkConfig(
+      eEthereumNetwork.holesky,
+      17000
+    ),
     [eArbitrumNetwork.goerliNitro]: getCommonNetworkConfig(
       eArbitrumNetwork.goerliNitro,
       421613
@@ -128,6 +132,10 @@ export default {
     [eBaseNetwork.baseGoerli]: getCommonNetworkConfig(
       eBaseNetwork.baseGoerli,
       84531
+    ),
+    [eBscNetwork.main]: getCommonNetworkConfig(
+      eBscNetwork.main,
+      56
     ),
     [eBscNetwork.testnet]: getCommonNetworkConfig(
       eBscNetwork.testnet,
@@ -215,7 +223,9 @@ export default {
   etherscan: {
     apiKey: {
       [eEthereumNetwork.sepolia]: ETHERSCAN_KEY,
-      [eBscNetwork.testnet]: BSCSCAN_KEY
+      [eEthereumNetwork.holesky]: ETHERSCAN_KEY,
+      [eBscNetwork.testnet]: BSCSCAN_KEY,
+      [eBscNetwork.main]: BSCSCAN_KEY
     },
     customChains: [
       {
@@ -232,6 +242,22 @@ export default {
         urls: {
           apiURL: "https://api-sepolia.etherscan.io/api",
           browserURL: "https://sepolia.etherscan.io/",
+        },
+      },
+      {
+        network: eEthereumNetwork.holesky,
+        chainId: 17000,
+        urls: {
+          apiURL: "https://api-holesky.etherscan.io/api",
+          browserURL: "https://holesky.etherscan.io/",
+        },
+      },
+      {
+        network: eBscNetwork.main,
+        chainId: 56,
+        urls: {
+          apiURL: "https://api.bscscan.com/api",
+          browserURL: "https://bscscan.com/",
         },
       },
       {

@@ -107,7 +107,14 @@ const func: DeployFunction = async function ({
   )) as AaveEcosystemReserveV2;
 
   // Call to initialize at implementation contract to prevent other calls.
-  await waitForTx(await treasuryImpl.initialize(ZERO_ADDRESS));
+  try {
+    await waitForTx(await treasuryImpl.initialize(ZERO_ADDRESS)); 
+  } catch (error:any) {
+    if (error.reason && error.reason.includes('Contract instance has already been initialized'))
+      console.log(`[DAVID](Treasury) Already initialized continuing ...`)
+    else
+      throw error
+  }
 
   // Initialize proxy
   const proxy = (await hre.ethers.getContractAt(

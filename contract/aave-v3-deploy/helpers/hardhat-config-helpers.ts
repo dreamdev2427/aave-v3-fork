@@ -79,6 +79,7 @@ export const NETWORKS_RPC_URL: iParamsPerNetwork<string> = {
   [eEthereumNetwork.ropsten]: `https://eth-ropsten.alchemyapi.io/v2/${getAlchemyKey(
     eEthereumNetwork.ropsten
   )}`,
+  [eEthereumNetwork.holesky]: `https://ethereum-holesky.publicnode.com`,
   [eHarmonyNetwork.main]: `https://a.api.s0.t.hmny.io/`,
   [eHarmonyNetwork.testnet]: `https://api.s0.b.hmny.io`,
   [eAvalancheNetwork.avalanche]: "https://api.avax.network/ext/bc/C/rpc",
@@ -99,6 +100,7 @@ export const NETWORKS_RPC_URL: iParamsPerNetwork<string> = {
   [eBaseNetwork.base]: `https://base-mainnet.g.alchemy.com/v2/${getAlchemyKey(
     eBaseNetwork.base
   )}`,
+  [eBscNetwork.main]: `https://bsc-dataseed1.ninicoin.io`,
   [eBscNetwork.testnet]: `https://data-seed-prebsc-2-s2.bnbchain.org:8545`
 };
 
@@ -111,12 +113,14 @@ export const LIVE_NETWORKS: iParamsPerNetwork<boolean> = {
   [eFantomNetwork.main]: true,
   [eOptimismNetwork.main]: true,
   [eBaseNetwork.base]: true,
+  [eBscNetwork.main]: true,
 };
 
 const GAS_PRICE_PER_NET: iParamsPerNetwork<string | number> = {
   [eArbitrumNetwork.goerliNitro]: 100000001,
   [eBaseNetwork.baseGoerli]: 8000000000,
   [eBscNetwork.testnet]: 15000000000,
+  [eBscNetwork.main]: 10000000000,
 };
 
 export const buildForkConfig = ():

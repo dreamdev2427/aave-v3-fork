@@ -32,7 +32,14 @@ const func: DeployFunction = async function ({
 
   // Initialize implementation
   const poolConfig = await getPoolConfiguratorProxy(poolConfigArtifact.address);
-  await waitForTx(await poolConfig.initialize(addressesProviderAddress));
+  try {
+    await waitForTx(await poolConfig.initialize(addressesProviderAddress));
+  } catch (error:any) {
+    if (error.reason && error.reason.includes('Contract instance has already been initialized'))
+      console.log(`[DAVID](Pool Configuration) Already initialized! continuing ...`)
+    else
+      throw error
+  }
   console.log("Initialized PoolConfigurator Implementation");
 
   await deploy(RESERVES_SETUP_HELPER_ID, {

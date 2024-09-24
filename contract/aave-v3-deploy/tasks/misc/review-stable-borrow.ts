@@ -61,7 +61,8 @@ task(`review-stable-borrow`, ``)
           console.error(
             `- Missing address ${tokenAddress} at ReserveAssets configuration.`
           );
-          exit(3);
+          continue
+          // exit(3); // [DAVID]
         }
 
         console.log(

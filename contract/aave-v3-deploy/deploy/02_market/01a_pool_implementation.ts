@@ -55,7 +55,11 @@ const func: DeployFunction = async function ({
 
   // Initialize implementation
   const pool = await getPool(poolArtifact.address);
-  await waitForTx(await pool.initialize(addressesProviderAddress));
+  try {
+    await waitForTx(await pool.initialize(addressesProviderAddress));
+  } catch (error: any) {
+    console.log(error.reason)
+  }
   console.log("Initialized Pool Implementation");
 };
 

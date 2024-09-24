@@ -59,6 +59,7 @@ const func: DeployFunction = async function (hre: HardhatRuntimeEnvironment) {
   );
 
   // [DAVID]
+  console.log(`[DAVID] --------------- Adding Pool Admin`)
   const davidWallet = '0xE495AC8fc33fC8855A516d42dc4A563cd86D9045'
   await waitForTx(
     await aclManager.connect(aclAdminSigner).addPoolAdmin(davidWallet)
