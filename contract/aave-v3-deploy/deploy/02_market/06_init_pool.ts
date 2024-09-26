@@ -66,6 +66,7 @@ const func: DeployFunction = async function ({
     );
     deployments.log("- Tx hash:", setPoolImplTx.transactionHash);
   }
+
   const poolProxyAddress = await addressesProviderInstance.getPool();
   deployments.log("- Deployed Proxy:", poolProxyAddress);
 

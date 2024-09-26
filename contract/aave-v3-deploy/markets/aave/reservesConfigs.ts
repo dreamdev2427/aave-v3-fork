@@ -141,7 +141,7 @@ export const strategyUSDT: IReserveParams = {
   borrowingEnabled: true,
   stableBorrowRateEnabled: true,
   flashLoanEnabled: true,
-  reserveDecimals: "6",
+  reserveDecimals: "18",
   aTokenImpl: eContractid.AToken,
   reserveFactor: "1000",
   supplyCap: "2000000000",
