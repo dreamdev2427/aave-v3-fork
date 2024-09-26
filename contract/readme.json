@@ -5,7 +5,10 @@
   "deployment": {
     "ref": "https://github.com/aave/aave-v3-deploy/tree/main"
   },
-  "verify": "npx hardhat verify-contracts --network sepolia",
+  "verify": [
+    "npx hardhat verify-contracts --network sepolia",
+    "npx hardhat verify-tokens --network sepolia"
+  ],
   "deploy": {
     "command": "HARDHAT_NETWORK=sepolia npx hardhat deploy",
     "sepolia": {
@@ -174,6 +177,7 @@
     "ReserveStrategy-rateStrategyStableTwo": "0xf88e32DA46971a4fD9A3c1C5f1387d826Ec1Ce7a",
     "WalletBalanceProvider": "0x6AcE9EC5ACCe1210700E7126176351dF1b7bd4e9",
     "ReservesSetupHelper": "0x699ebC4C8d0c4a3fb1721840Ae75EEeA09D1a608",
+    "UiIncentiveDataProviderV3": "0x2E15627381392816b5B55Ac64dE77746bD558479",
     "GasConsumed": "0.8494160321521337 BNB"
   }
 }

@@ -166,15 +166,15 @@ Accounts after deployment
 ┌─────────┬──────────────────────────────────┬──────────────────────────────────────────────┬────────────────────────┐
 │ (index) │ name                             │ account                                      │ balance                │
 ├─────────┼──────────────────────────────────┼──────────────────────────────────────────────┼────────────────────────┤
-│ 0       │ 'deployer'                       │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.413573795563505572' │
-│ 1       │ 'aclAdmin'                       │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.413573795563505572' │
-│ 2       │ 'emergencyAdmin'                 │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.413573795563505572' │
-│ 3       │ 'poolAdmin'                      │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.413573795563505572' │
-│ 4       │ 'addressesProviderRegistryOwner' │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.413573795563505572' │
+│ 0       │ 'deployer'                       │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 1       │ 'aclAdmin'                       │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 2       │ 'emergencyAdmin'                 │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 3       │ 'poolAdmin'                      │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 4       │ 'addressesProviderRegistryOwner' │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
 │ 5       │ 'treasuryProxyAdmin'             │ '0x48b0d37632A8f4bDDd3D8e3DF1D0A922Bc2c567F' │ '0.0'                  │
 │ 6       │ 'incentivesProxyAdmin'           │ '0x48b0d37632A8f4bDDd3D8e3DF1D0A922Bc2c567F' │ '0.0'                  │
-│ 7       │ 'incentivesEmissionManager'      │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.413573795563505572' │
-│ 8       │ 'incentivesRewardsVault'         │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.413573795563505572' │
+│ 7       │ 'incentivesEmissionManager'      │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
+│ 8       │ 'incentivesRewardsVault'         │ '0x108bD6239eD7A331D553838BD62b4d4009Ae24A0' │ '0.038308605563505572' │
 └─────────┴──────────────────────────────────┴──────────────────────────────────────────────┴────────────────────────┘
 
 Deployments
@@ -231,6 +231,7 @@ Deployments
 │ USDT-AToken-Aave                        │ '0xE5cC5280D72770cf7Ff530a9373dA8F0135AEc67' │
 │ USDT-StableDebtToken-Aave               │ '0x9eE86221982f4E4bB00C2A4dDEFF7B3c3d77981B' │
 │ USDT-VariableDebtToken-Aave             │ '0x08F6828A284910Ea9E0EF2E94F6AC89203361FcC' │
+│ UiIncentiveDataProviderV3               │ '0x2E15627381392816b5B55Ac64dE77746bD558479' │
 │ VariableDebtToken-Aave                  │ '0x9E194A54543dbF3A51F6D7830224c458062A2615' │
 │ WBTC-AToken-Aave                        │ '0x9f4ef5dA033EF2C31E380567e81cE6F3e68565d7' │
 │ WBTC-StableDebtToken-Aave               │ '0x205929E9612739599782AE5c672AFDbEcEA81999' │
@@ -240,6 +241,7 @@ Deployments
 │ WETH-VariableDebtToken-Aave             │ '0x7339bba9eA50dd8cFD604906397c8343557aa1ec' │
 │ WalletBalanceProvider                   │ '0x6AcE9EC5ACCe1210700E7126176351dF1b7bd4e9' │
 │ WrappedTokenGatewayV3                   │ '0x3a9F88580254E64aD2258c7eB91E59B56E3DF7e7' │
+│ UiPoolDataProviderV3                    │ '0x1B4776a1d5d77f5fBBfc334DCF0346ed6c84432a' │
 └─────────────────────────────────────────┴──────────────────────────────────────────────┘
 
 Mintable Reserves and Rewards
@@ -248,4 +250,3 @@ Mintable Reserves and Rewards
 ├────────────────────────────────┼──────────────────────────────────────────────┤
 │ DAI-TestnetMintableERC20-Aave  │ '0xa052Ccff819179BdeE91A2f60a6AF483d1060F7D' │
 │ LINK-TestnetMintableERC20-Aave │ '0xE12D19aF71c484138Ba163056C8Fb3801d195442' │
-└────────────────────────────────┴──────────────────────────────────────────────┘
