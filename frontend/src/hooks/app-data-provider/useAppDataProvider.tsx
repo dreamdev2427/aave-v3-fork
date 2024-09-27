@@ -84,7 +84,6 @@ export const AppDataProvider: React.FC = ({ children }) => {
     usePoolFormattedReserves(currentMarketData);
   const baseCurrencyData = reservesData?.baseCurrencyData;
   // user hooks
-
   const eModes = reservesData?.reservesData ? formatEmodes(reservesData.reservesData) : {};
 
   const { data: userReservesData, isLoading: userReservesDataLoading } =

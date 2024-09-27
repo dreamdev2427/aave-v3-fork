@@ -55,7 +55,6 @@ export const usePoolsFormattedReserves = (
 ): SimplifiedUseQueryResult<FormattedReservesAndIncentives[]>[] => {
   const poolsReservesQueries = usePoolsReservesHumanized(marketsData);
   const poolsReservesIncentivesQueries = usePoolsReservesIncentivesHumanized(marketsData);
-
   return poolsReservesQueries.map((poolReservesQuery, index) => {
     const marketData = marketsData[index];
     const poolReservesIncentivesQuery = poolsReservesIncentivesQueries[index];
