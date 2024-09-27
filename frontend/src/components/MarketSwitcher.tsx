@@ -353,6 +353,7 @@ export const MarketSwitcher = () => {
                     ? 'none'
                     : 'flex',
               }}
+              disabled={marketNaming.name !== 'BNB Chain'}
             >
               <MarketLogo
                 size={32}
@@ -360,7 +361,7 @@ export const MarketSwitcher = () => {
                 testChainName={marketNaming.testChainName}
               />
               <ListItemText sx={{ mr: 0 }}>
-                {marketNaming.name} {market.isFork ? 'Fork' : ''}
+                {marketNaming.name} {market.isFork ? 'Fork' : ''} {marketNaming.name !== 'BNB Chain' ? '(Comming soon)' : ''}
               </ListItemText>
               <ListItemText sx={{ textAlign: 'right' }}>
                 <Typography color="text.muted" variant="description">

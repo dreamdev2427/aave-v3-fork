@@ -29,7 +29,7 @@ task(
 
     if (debtCeiling.gt("0")) {
 
-      console.log(`[DAVID] Updating debt ceiling of ${asset} ...`)
+      console.log(`[AQUA] Updating debt ceiling of ${asset} ...`)
       await waitForTx(
         await poolConfigurator.setDebtCeiling(assetAddress, debtCeiling)
       );

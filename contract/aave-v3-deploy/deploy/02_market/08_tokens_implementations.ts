@@ -65,7 +65,7 @@ const func: DeployFunction = async function ({
     );
   } catch (error: any) {
     if (error.reason && error.reason.includes('Contract instance has already been initialized'))
-      console.log(`[DAVID](AToken) Already initialized! continuing ...`)
+      console.log(`[AQUA](AToken) Already initialized! continuing ...`)
     else
       throw error
   }
@@ -99,7 +99,7 @@ const func: DeployFunction = async function ({
     );
   } catch (error: any) {
     if (error.reason && error.reason.includes('Contract instance has already been initialized'))
-      console.log(`[DAVID](Pool Configuration) Already initialized! continuing ...`)
+      console.log(`[AQUA](Pool Configuration) Already initialized! continuing ...`)
     else
       throw error
   }
@@ -129,7 +129,7 @@ const func: DeployFunction = async function ({
     );
   } catch (error: any) {
     if (error.reason && error.reason.includes('Contract instance has already been initialized'))
-      console.log(`[DAVID](stableDebtToken) Already initialized! continuing ...`)
+      console.log(`[AQUA](stableDebtToken) Already initialized! continuing ...`)
     else
       throw error
   }
@@ -159,7 +159,7 @@ const func: DeployFunction = async function ({
     );
   } catch (error: any) {
     if (error.reason && error.reason.includes('Contract instance has already been initialized'))
-      console.log(`[DAVID](variableDebtToken) Already initialized! continuing ...`)
+      console.log(`[AQUA](variableDebtToken) Already initialized! continuing ...`)
     else
       throw error
   }

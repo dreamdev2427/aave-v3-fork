@@ -189,7 +189,7 @@ export const getProvider = (chainId: ChainId): ProviderWithSend => {
 };
 
 export const getENSProvider = () => {
-  const chainId = 1;
+  const chainId = 56;
   const config = getNetworkConfig(chainId);
   return new StaticJsonRpcProvider(config.publicJsonRPCUrl[0], chainId);
 };

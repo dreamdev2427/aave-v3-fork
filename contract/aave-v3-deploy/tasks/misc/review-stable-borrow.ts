@@ -62,7 +62,7 @@ task(`review-stable-borrow`, ``)
             `- Missing address ${tokenAddress} at ReserveAssets configuration.`
           );
           continue
-          // exit(3); // [DAVID]
+          // exit(3); // [AQUA]
         }
 
         console.log(

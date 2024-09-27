@@ -24,7 +24,7 @@ export function MainLayout({ children }: { children: ReactNode }) {
       <Box component="main" sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
         <img
           src="/bg.gif"
-          style={{ width: '100vw', height: 'auto', position: 'fixed', opacity: '0.2', top: '0' }}
+          style={{ width: '100vw', height: 'auto', position: 'fixed', opacity: '0.2', top: '0', zIndex: -1 }}
         />
         {children}
       </Box>

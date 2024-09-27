@@ -19,7 +19,7 @@ task(`verify-contracts`).setAction(
     const artifacts = await getArtifactsFromJson(network)
     for(const artifact of artifacts)
     try {
-      console.log(`[DAVID] --------------- verifying ${artifact.address} args:(${artifact.args}) `)
+      console.log(`[AQUA] --------------- verifying ${artifact.address} args:(${artifact.args}) `)
       await hre.run("verify:verify", {
         address: artifact.address,
         constructorArguments: artifact.args || [],

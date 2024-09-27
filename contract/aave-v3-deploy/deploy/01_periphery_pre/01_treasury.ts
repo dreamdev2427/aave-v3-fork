@@ -111,7 +111,7 @@ const func: DeployFunction = async function ({
     await waitForTx(await treasuryImpl.initialize(ZERO_ADDRESS)); 
   } catch (error:any) {
     if (error.reason && error.reason.includes('Contract instance has already been initialized'))
-      console.log(`[DAVID](Treasury) Already initialized continuing ...`)
+      console.log(`[AQUA](Treasury) Already initialized continuing ...`)
     else
       throw error
   }

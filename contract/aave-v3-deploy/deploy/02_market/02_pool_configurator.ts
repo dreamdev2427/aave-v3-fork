@@ -36,7 +36,7 @@ const func: DeployFunction = async function ({
     await waitForTx(await poolConfig.initialize(addressesProviderAddress));
   } catch (error:any) {
     if (error.reason && error.reason.includes('Contract instance has already been initialized'))
-      console.log(`[DAVID](Pool Configuration) Already initialized! continuing ...`)
+      console.log(`[AQUA](Pool Configuration) Already initialized! continuing ...`)
     else
       throw error
   }
