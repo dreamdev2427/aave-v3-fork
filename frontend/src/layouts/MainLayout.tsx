@@ -6,20 +6,20 @@ import { FORK_ENABLED } from 'src/utils/marketsAndNetworksConfig';
 
 import { AppFooter } from './AppFooter';
 import { AppHeader } from './AppHeader';
-import TopBarNotify from './TopBarNotify';
+// import TopBarNotify from './TopBarNotify';
 
 export function MainLayout({ children }: { children: ReactNode }) {
-  const APP_BANNER_VERSION = '1.0.0';
+  // const APP_BANNER_VERSION = '1.0.0';
 
   return (
     <>
-      <TopBarNotify
+      {/* <TopBarNotify
         learnMoreLink="/markets/?marketName=proto_lido_v3"
         buttonText="View Market"
         notifyText="Aqualoan Governance has deployed a new Lido market on Ethereum V3"
         bannerVersion={APP_BANNER_VERSION}
         icon={'/icons/tokens/ldo.svg'}
-      />
+      /> */}
       <AppHeader />
       <Box component="main" sx={{ display: 'flex', flexDirection: 'column', flex: 1 }}>
         <img

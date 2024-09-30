@@ -188,7 +188,7 @@ export const MarketSwitcher = () => {
                   {/* {upToLG && ' Market'} */}
                   {upToLG && ''}
                 </Typography>
-                {market.v3 ? (
+                {/* {market.v3 ? (
                   <Box
                     sx={{
                       color: '#fff',
@@ -210,7 +210,7 @@ export const MarketSwitcher = () => {
                   >
                     <Typography variant="subheader2">V2</Typography>
                   </Box>
-                )}
+                )} */}
               </Box>
             </Box>
           );

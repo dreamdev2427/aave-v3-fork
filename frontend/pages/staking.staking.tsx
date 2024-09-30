@@ -114,7 +114,7 @@ export default function Staking() {
   const isStakeAAVE = mode === 'aave';
   const isStkGho = mode === 'gho';
   const isStkBpt = mode === 'bpt';
-  const commingSoong = true
+  const commingSoong = true // [DAVID]
 
   const showAbptPanel =
     !stkBpt?.inPostSlashingPeriod ||
@@ -124,7 +124,7 @@ export default function Staking() {
 
   return (
     commingSoong
-      ? <></>
+      ? <Typography variant="h1" sx = {{textAlign: 'center', my: 10}}>Comming Soon ...</Typography>
       :
       <>
         <StakingHeader tvl={tvl} stkEmission={stkEmission} loading={stakeGeneralResultLoading} />
