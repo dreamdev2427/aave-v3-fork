@@ -19,7 +19,7 @@ import { useModalContext } from 'src/hooks/useModal';
 import { MainLayout } from 'src/layouts/MainLayout';
 import { GetABPToken } from 'src/modules/staking/GetABPToken';
 // import { GhoDiscountProgram } from 'src/modules/staking/GhoDiscountProgram';
-import { StakingHeader } from 'src/modules/staking/StakingHeader';
+// import { StakingHeader } from 'src/modules/staking/StakingHeader';
 import { StakingPanel } from 'src/modules/staking/StakingPanel';
 import { useRootStore } from 'src/store/root';
 import { ENABLE_TESTNET, STAGING_ENV } from 'src/utils/marketsAndNetworksConfig';
@@ -123,7 +123,7 @@ export default function Staking() {
 
   return (
     <>
-      <StakingHeader tvl={tvl} stkEmission={stkEmission} loading={stakeGeneralResultLoading} />
+      {/* <StakingHeader tvl={tvl} stkEmission={stkEmission} loading={stakeGeneralResultLoading} /> */}
 
       <ContentContainer>
         {currentAccount ? (
