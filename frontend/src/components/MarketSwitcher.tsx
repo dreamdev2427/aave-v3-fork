@@ -342,7 +342,6 @@ export const MarketSwitcher = () => {
             'proto_scroll_sepolia_v3',
             'proto_sepolia_v3',
             'proto_base_sepolia_v3',
-            'proto_mainnet_v3',
             'proto_optimism_v3',
             'proto_fantom_v3',
             'proto_harmony_v3',
@@ -356,7 +355,6 @@ export const MarketSwitcher = () => {
             'proto_fuji',
             'proto_polygon',
             'amm_mainnet',
-            
           ];
 
           return !excludedDropdownMarkets.includes(marketId) && market;
