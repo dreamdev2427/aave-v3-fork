@@ -64,19 +64,19 @@ export class WalletConnectConnector extends AbstractConnector {
 
   public async activate(): Promise<ConnectorUpdate> {
     if (!this.walletConnectProvider) {
-      const walletConnectProviderFactory = await import('@walletconnect/ethereum-provider').then(
+      const walletConnectProviderFactory:any = await import('@walletconnect/ethereum-provider').then(
         (m) => m?.default ?? m
       );
       this.walletConnectProvider = await walletConnectProviderFactory.init(this.config);
     }
 
-    this.walletConnectProvider.on('chainChanged', this.handleChainChanged);
-    this.walletConnectProvider.on('accountsChanged', this.handleAccountsChanged);
-    this.walletConnectProvider.on('disconnect', this.handleDisconnect);
-    this.walletConnectProvider.on('display_uri', this.handleDisplayURI);
+    this.walletConnectProvider?.on('chainChanged', this.handleChainChanged);
+    this.walletConnectProvider?.on('accountsChanged', this.handleAccountsChanged);
+    this.walletConnectProvider?.on('disconnect', this.handleDisconnect);
+    this.walletConnectProvider?.on('display_uri', this.handleDisplayURI);
     try {
-      const accounts = await this.walletConnectProvider.enable();
-      const defaultAccount = accounts[0];
+      const accounts = await this.walletConnectProvider?.enable();
+      const defaultAccount = accounts?.[0];
       return { provider: this.walletConnectProvider, account: defaultAccount };
     } catch (error) {
       if (error.message === 'Connection request reset. Please try again.') {

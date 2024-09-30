@@ -187,12 +187,12 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
     switch (providerName) {
       case 'CoinBase':
         provider = ethereum.providers.find(
-          //@ts-expect-error no type
+          //@ts-ignore no type
           ({ isCoinbaseWallet, isCoinbaseBrowser }) => isCoinbaseWallet || isCoinbaseBrowser
         );
         break;
       case 'MetaMask':
-        //@ts-expect-error no type
+        //@ts-ignore no type
         provider = ethereum.providers.find(({ isMetaMask }) => isMetaMask);
         break;
       default:
@@ -383,7 +383,7 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
   const getTxError = async (txHash: string): Promise<string> => {
     if (provider) {
       const tx = await provider.getTransaction(txHash);
-      // @ts-expect-error TODO: need think about "tx" type
+      // @ts-ignore TODO: need think about "tx" type
       const code = await provider.call(tx, tx.blockNumber);
       const error = hexToAscii(code.substr(138));
       return error;

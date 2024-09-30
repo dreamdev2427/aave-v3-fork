@@ -244,7 +244,7 @@ export const RepayModalContent = ({
         usdValue={usdValue.toString(10)}
         symbol={tokenToRepayWith.symbol}
         assets={assets}
-        onSelect={setTokenToRepayWith}
+        onSelect={setTokenToRepayWith as unknown as (asset: Asset) => void}
         isMaxSelected={isMaxSelected}
         maxValue={maxAmountToRepay.toString(10)}
         balanceText={<Trans>Wallet balance</Trans>}

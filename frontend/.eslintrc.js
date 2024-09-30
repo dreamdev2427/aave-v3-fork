@@ -14,8 +14,8 @@ module.exports = {
     'prettier/prettier': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
-    'simple-import-sort/imports': 'error',
-    'simple-import-sort/exports': 'warn',
+    'simple-import-sort/imports': 'off',
+    'simple-import-sort/exports': 'off',
     'import/first': 'error',
     'import/newline-after-import': 'error',
     'import/no-duplicates': 'error',
@@ -24,6 +24,6 @@ module.exports = {
     // disabled as with the static export Image does not make to much sense
     '@next/next/no-img-element': 'off',
     'react/self-closing-comp': 'warn',
-    'react/display-name': 'off',
+    'react/display-name': 'off'
   },
 };

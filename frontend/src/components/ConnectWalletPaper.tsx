@@ -1,10 +1,10 @@
-import { Trans } from '@lingui/macro';
-import { Box, CircularProgress, Paper, PaperProps, Typography } from '@mui/material';
-import Image from 'next/image';
 import { ReactNode } from 'react';
+import Image from 'next/image';
+import { Box, CircularProgress, Paper, PaperProps, Typography } from '@mui/material';
+import { Trans } from '@lingui/macro';
 
-import LandingGhost from '/public/logo.png';
-import WalletBg from '/public/walletbg.png';
+// import LandingGhost from '/public/logo.png';
+// import WalletBg from '/public/walletbg.png';
 
 import { ConnectWalletButton } from './WalletConnection/ConnectWalletButton';
 
@@ -36,9 +36,9 @@ export const ConnectWalletPaper = ({
         ...sx,
       }}
     >
-      <Image src={WalletBg} width={0} height={0} layout="fill" style={{ opacity: '0.2' }} alt="" />
+      <Image src='/public/walletbg.png' width={0} height={0} layout="fill" style={{ opacity: '0.2' }} alt="" />
       <Box>
-        <Image src={LandingGhost} width={200} height={200} alt={''} />
+        <Image src='/public/logo.png' width={200} height={200} alt={''} />
       </Box>
       <>
         {loading ? (

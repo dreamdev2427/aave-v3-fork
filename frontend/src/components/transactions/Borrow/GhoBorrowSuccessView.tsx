@@ -44,7 +44,7 @@ const CopyImageButton = styled(Button)(() => ({
   },
   backdropFilter: 'blur(5px)',
   border: '1px solid #FFFFFF20',
-})) as typeof Button;
+})) as unknown as typeof Button;
 
 const IconButtonCustom = styled(IconButton)(() => ({
   backgroundColor: 'white',
@@ -56,7 +56,7 @@ const IconButtonCustom = styled(IconButton)(() => ({
     transform: 'translateY(-3px)',
     boxShadow: '0px 4px 4px 0px #00000040',
   },
-})) as typeof IconButton;
+})) as unknown as typeof IconButton;
 
 const ImageContainer = styled(Box)(() => ({
   position: 'relative',

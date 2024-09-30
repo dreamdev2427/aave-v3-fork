@@ -96,7 +96,7 @@ export function getSupportedChainIds(): number[] {
     Object.keys(marketsData)
       .filter((value) => {
         const isTestnet =
-          networkConfigs[marketsData[value as keyof typeof CustomMarket].chainId].isTestnet;
+          networkConfigs[marketsData[value as keyof typeof CustomMarket].chainId]?.isTestnet;
 
         // If this is a staging environment, or the testnet toggle is on, only show testnets
         if (STAGING_ENV || ENABLE_TESTNET) {
