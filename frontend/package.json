@@ -23,7 +23,7 @@
     "i18n:extract": "NODE_ENV=development lingui extract --clean --overwrite --locale en",
     "i18n:compile": "lingui compile",
     "i18n": "yarn i18n:extract && yarn i18n:compile",
-    "prepare": "husky install",
+    "prepare": "cd .. && husky install frontend/.husky",
     "test:open": "DOTENV_CONFIG_PATH='.env.local' cypress open",
     "test:headless": "export DOTENV_CONFIG_PATH='../../../.env.local' && cypress run --config-file './cypress/configs/local/full.config.ts'",
     "test": "jest --watch",
