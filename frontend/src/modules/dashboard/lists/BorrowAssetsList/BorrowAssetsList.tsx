@@ -102,6 +102,7 @@ export const BorrowAssetsList = () => {
 
   const { baseAssetSymbol } = currentNetworkConfig;
 
+  console.log(`[DAVID] tokensToBorrow :`, JSON.stringify(reserves))
   const tokensToBorrow = reserves
     .filter((reserve) => (user ? assetCanBeBorrowedByUser(reserve, user) : false))
     .map((reserve: ComputedReserveData) => {
@@ -145,7 +146,6 @@ export const BorrowAssetsList = () => {
         .div(maxBorrowAmount)
         .toFixed();
 
-  console.log(`[DAVID] tokensToBorrow :`, JSON.stringify(tokensToBorrow))
   const borrowReserves =
     user?.totalCollateralMarketReferenceCurrency === '0' || +collateralUsagePercent >= 0.98
       ? tokensToBorrow
