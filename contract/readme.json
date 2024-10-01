@@ -194,6 +194,98 @@
       "withdraw": [
         "https://bscscan.com/tx/0x79f82d2c0cb77fc000d1ce63802979407b65abf3d240bc123d5659f724072ebb"
       ]
-    }
+    },
+    "usdc": {
+      "supply": [
+        "https://bscscan.com//tx/0xbda6f8daf4667c3f0c911fb99f8e4d6a7bb474f2db5420370a78e9e06eaea5b4"
+      ],
+      "borrow": [
+        "https://bscscan.com//tx/0x97cd91fd67908cc9b10fa94d9174fdba192a7da84ff14963e4608e211166504f"
+      ],
+      "repay": [
+        "https://bscscan.com/tx/0xe620745be0d908de69b89c46c1d03b8aec6832f48f5d97678ffbf5c482cc922c"
+      ],
+      "withdraw": [
+        "https://bscscan.com//tx/0x10e1970765c53d6f0b001ba5f6911f5bdf0490f4094d8681c4e10e3bde32a7ae"
+      ]
+    },
+    "LINK": {
+      "supply": [
+        "https://bscscan.com//tx/0x6be5cf6956e588ebb46e028df68177ec8ed8f42ce66093219b7e3b7b79e9ff90"
+      ],
+      "borrow": [
+        "https://bscscan.com//tx/0xdbd647d5a6da0a31854841a255ec3b3c396a1932c758230f56f9cc9c5683de9b"
+      ],
+      "repay": [
+        "https://bscscan.com//tx/0xcb86280f21279b83a551f3366f82157e0863908b29db6a40a60ac1284156b95d"
+      ],
+      "withdraw": [
+        "https://bscscan.com//tx/0x6252988b4b181639dad226811d904bdb0fcbd274210c9756f5bf4ce2529e60fc"
+      ]
+    },
+    "DAI": {
+      "supply": [
+        "https://bscscan.com//tx/0x3403eee21acf0d78ae664d38d1c9519d577257b29ee1d3082f2d473b35205bed"
+      ],
+      "borrow": [
+        "https://bscscan.com//tx/0x596a2241c29098c5555d0d337190e3c66398cf537e412b287a321c94c40a3cba"
+      ],
+      "repay": [
+        "https://bscscan.com//tx/0x7d8e4069bd8d8d27f1c2355b40643982747dd63110facbd604bdd2bc332d10b7"
+      ],
+      "withdraw": [
+        "https://bscscan.com//tx/0x1d1aaee03d0b2458a092b0fee22a19582d62710cbb075128b86797c49809baf0"
+      ]
+    },
+    "AAVE": {
+      "supply": [
+        "https://bscscan.com//tx/0xd60e159663ac4859f3f2fa6dad841b978be21dbe295117fbf0b5fe05f7862089"
+      ],
+      "borrow": [
+        ""
+      ]
+    },
+    "wBTC": {
+      "supply": [
+        "https://bscscan.com//tx/0xd8f3680d9c099272e45f2c7dc756fa58498eafec3e72fc0fdd399545d9d697a4"
+      ],
+      "borrow": [
+        "https://bscscan.com//tx/0xa84e0e9b58771e2c6f488b0987c08a3cd6bbe738f6e5baef2136c6411c6433f8"
+      ],
+      "repay": [
+        "https://bscscan.com//tx/0x734e95c5d454056d7d2e5e310f864f4e8c23bde6608f7326ea4edf1e6a1454de"
+      ],
+      "withdraw": [
+        "https://bscscan.com//tx/0xf0b633799451a2e13034b0b97984abd066b29da36b406334297e8bba9e01ee69"
+      ]
+    },
+    "EURA": {
+      "supply": [
+        "https://bscscan.com//tx/0xe3781eeaae2323738f3e55f9ada8a691dde82a64a2fbcd476b3ecd00ee30b32c"
+      ],
+      "borrow": [
+        "https://bscscan.com//tx/0x6b37e4018c04a19ce7bbcb2f11081fcb44a57c2fba52c548004756616c3f2b40"
+      ],
+      "repay": [
+        "https://bscscan.com//tx/0x948e9269c75a419e70b560e5c7bdcc2cf64ce3bcc7bbee7ccf7860706699d860"
+      ],
+      "withdraw": [
+        "https://bscscan.com//tx/0xd5179ec831f70b90500e91e58472d1564b0f65ab4e56ba07964498d4e1d31061"
+      ]
+    },
+    "WETH": {
+      "supply": [
+        "https://bscscan.com//tx/0xb8e3830539246f3cc5e4b22e6ff21e73830e65b5be3768ebaa25299731cc719e"
+      ],
+      "borrow": [
+        "https://bscscan.com//tx/0xa2352bb1b3b20962e8ec9f08a3d88710ccbf58099b397ecac5e38891165a005e"
+      ],
+      "repay": [
+        "https://bscscan.com//tx/0xdcf2c1b579b61305c73a26f40b389618b08443aa0a157ac5a7ee6592a2102f4a"
+      ],
+      "withdraw": [
+        "https://bscscan.com//tx/0xbc09ef7d413afa2fa77ccaa91c388dad3e10ccf7178914b2a4dc25ed0a95cabd"
+      ]
+    },
   }
 }
