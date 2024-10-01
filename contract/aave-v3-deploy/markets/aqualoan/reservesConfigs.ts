@@ -33,7 +33,7 @@ export const strategyUSDC: IReserveParams = {
   borrowingEnabled: true,
   stableBorrowRateEnabled: true,
   flashLoanEnabled: true,
-  reserveDecimals: "6",
+  reserveDecimals: "18",
   aTokenImpl: eContractid.AToken,
   reserveFactor: "1000",
   supplyCap: "2000000000",
@@ -146,7 +146,7 @@ export const strategyUSDT: IReserveParams = {
   reserveFactor: "1000",
   supplyCap: "2000000000",
   borrowCap: "0",
-  debtCeiling: "500000000",
+  debtCeiling: "0",
   borrowableIsolation: true,
 };
 
@@ -159,11 +159,11 @@ export const strategyEURS: IReserveParams = {
   borrowingEnabled: true,
   stableBorrowRateEnabled: true,
   flashLoanEnabled: true,
-  reserveDecimals: "2",
+  reserveDecimals: "18",
   aTokenImpl: eContractid.AToken,
   reserveFactor: "1000",
   supplyCap: "0",
   borrowCap: "0",
-  debtCeiling: "500000000",
+  debtCeiling: "0",
   borrowableIsolation: false,
 };
