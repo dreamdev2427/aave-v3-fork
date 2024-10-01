@@ -23,7 +23,7 @@
       "Treasury-Controller": "0xFdE29143F0c5F5179F1865c30031d690dC81db9D",
       "Treasury-Implementation": "0x3aaee2EdeB3f9c45DdA9846FC643e59abe52B4B3",
       "Faucet-Aave": "0x3b784B7e953FBebb8D4cA3bf2a540de82FED6960",
-       "DAI": "0x01B2c2CA84229CE81C07ba705be578eF84bC0640",
+      "DAI": "0x01B2c2CA84229CE81C07ba705be578eF84bC0640",
       "LINK": "0x1aEce612469ac9a5a8D5417EAA8D719C54C64dA8",
       "USDC": "0xFdc853f677bcd5C70f474c8DE44065d1C098e460",
       "WBTC": "0x025A206cAD71Fdf59f30699825cFf0aEF8B58E64",
@@ -179,5 +179,21 @@
     "ReservesSetupHelper": "0x699ebC4C8d0c4a3fb1721840Ae75EEeA09D1a608",
     "UiIncentiveDataProviderV3": "0x2E15627381392816b5B55Ac64dE77746bD558479",
     "GasConsumed": "0.8494160321521337 BNB"
+  },
+  "transactions": {
+    "usdt": {
+      "supply": [
+        "https://bscscan.com/tx/0xa8955261ba5e2c812b4f30a5fd2194cd20693cd7cc8328858d8df01a626f87aa"
+      ],
+      "borrow": [
+        "https://bscscan.com/tx/0xd25d8c3fb304a94fcb0f6579b097d55749272bf00c95ed914e351933e53d266e"
+      ],
+      "repay": [
+        "https://bscscan.com/tx/0xd96ad057ccf42204c1970b1676d802f9d89f811db24aa33c16945dfec28475fd"
+      ],
+      "withdraw": [
+        "https://bscscan.com/tx/0x79f82d2c0cb77fc000d1ce63802979407b65abf3d240bc123d5659f724072ebb"
+      ]
+    }
   }
 }

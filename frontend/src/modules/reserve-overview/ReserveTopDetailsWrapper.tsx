@@ -116,7 +116,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
               <Typography variant="subheader1" sx={{ color: 'common.white' }}>
                 {market.marketTitle} <Trans>Market</Trans>
               </Typography>
-              {market.v3 && (
+              {/* {market.v3 && (
                 <Box
                   sx={{
                     color: '#fff',
@@ -128,7 +128,7 @@ export const ReserveTopDetailsWrapper = ({ underlyingAsset }: ReserveTopDetailsP
                 >
                   <Typography variant="subheader2">Version 3</Typography>
                 </Box>
-              )}
+              )} */}
             </Box>
           </Box>
 
