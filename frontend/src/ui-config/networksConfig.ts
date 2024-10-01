@@ -417,7 +417,7 @@ export const networkConfigs: Record<string, BaseNetworkConfig> = {
   },
   [ChainId.bnb]: {
     name: 'Binance Smart Chain',
-    privateJsonRPCUrl: 'https://bsc-mainnet.rpc.grove.city/v1/62b3314e123e6f00397f19ca',
+    privateJsonRPCUrl: 'https://binance.llamarpc.com/v1/62b3314e123e6f00397f19ca',
     publicJsonRPCUrl: ['https://binance.llamarpc.com', 'wss://bsc-rpc.publicnode.com'],
     publicJsonRPCWSUrl: 'wss://bsc-rpc.publicnode.com',
     baseAssetSymbol: 'BNB',
