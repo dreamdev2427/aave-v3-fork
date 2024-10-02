@@ -6,6 +6,7 @@ import { useRootStore } from 'src/store/root';
 
 import DiscordIcon from '/public/icons/discord.svg';
 import InstagramIcon from '/public/icons/instagram.svg';
+import FaceBookIcon from '/public/icons/facebook.svg';
 
 interface StyledLinkProps {
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
@@ -21,6 +22,11 @@ const StyledLink = styled(Link)<StyledLinkProps>(({ theme }) => ({
 }));
 
 const FOOTER_ICONS = [
+  {
+    href: 'https://www.facebook.com/profile.php?id=61565594247424',
+    icon: <FaceBookIcon />,
+    title: 'Facebook',
+  },
   {
     href: 'https://www.instagram.com/aqualoandefi',
     icon: <InstagramIcon />,
