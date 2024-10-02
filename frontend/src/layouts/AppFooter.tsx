@@ -50,16 +50,16 @@ export function AppFooter() {
   ]);
 
   const FOOTER_LINKS = [
-    {
-      href: 'https://aave.com/term-of-use/',
-      label: <Trans>Terms</Trans>,
-      key: 'Terms',
-    },
-    {
-      href: 'https://aave.com/privacy-policy/',
-      label: <Trans>Privacy</Trans>,
-      key: 'Privacy',
-    },
+    // {
+    //   href: 'https://aave.com/term-of-use/',
+    //   label: <Trans>Terms</Trans>,
+    //   key: 'Terms',
+    // },
+    // {
+    //   href: 'https://aave.com/privacy-policy/',
+    //   label: <Trans>Privacy</Trans>,
+    //   key: 'Privacy',
+    // },
     {
       href: 'https://docs.aave.com/hub/',
       label: <Trans>Docs</Trans>,
