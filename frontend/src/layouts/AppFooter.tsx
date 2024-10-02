@@ -5,7 +5,7 @@ import { Link } from 'src/components/primitives/Link';
 import { useRootStore } from 'src/store/root';
 
 import DiscordIcon from '/public/icons/discord.svg';
-import LensLogoIcon from '/public/icons/lens-logo.svg';
+import InstagramIcon from '/public/icons/instagram.svg';
 
 interface StyledLinkProps {
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
@@ -23,7 +23,7 @@ const StyledLink = styled(Link)<StyledLinkProps>(({ theme }) => ({
 const FOOTER_ICONS = [
   {
     href: 'https://www.instagram.com/aqualoandefi',
-    icon: <LensLogoIcon />,
+    icon: <InstagramIcon />,
     title: 'Aqualoan',
   },
   {
