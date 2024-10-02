@@ -73,12 +73,12 @@ export function AppFooter() {
     //   key: 'Privacy',
     // },
     {
-      href: 'https://docs.aave.com/hub/',
+      href: 'https://davidsparker0417.gitbook.io/aqualoan',
       label: <Trans>Docs</Trans>,
       key: 'Docs',
     },
     {
-      href: 'https://docs.aave.com/faq/',
+      href: 'https://davidsparker0417.gitbook.io/aqualoan-faq',
       label: <Trans>FAQS</Trans>,
       key: 'FAQS',
     },
