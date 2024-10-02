@@ -242,7 +242,13 @@
         "https://bscscan.com//tx/0xd60e159663ac4859f3f2fa6dad841b978be21dbe295117fbf0b5fe05f7862089"
       ],
       "borrow": [
-        ""
+        "https://bscscan.com//tx/0x2649ee331463e21ba53d54469aada889668b3963ed67ef9d503428a5430cb154"
+      ],
+      "repay": [
+        "https://bscscan.com//tx/0xe8becbe308fdf74e02ae185490911b02a5a56b76b6ed1caafb03e12ea9b959b1"
+      ],
+      "withdraw": [
+        "https://bscscan.com//tx/0x262001e4f11e04149c261e5f47c1b293cc16938f1b00c619008ee02a59c147db"
       ]
     },
     "wBTC": {
@@ -287,5 +293,33 @@
         "https://bscscan.com//tx/0xbc09ef7d413afa2fa77ccaa91c388dad3e10ccf7178914b2a4dc25ed0a95cabd"
       ]
     },
+    "ETH": {
+      "supply": [
+        "https://bscscan.com/tx/0xafa03d05195a43f6a7cc640c32c8b3123163deb291987464a3763dd3e7670958"
+      ],
+      "borrow": [
+        "https://bscscan.com//tx/0x5d3887b42fedb94076fb1d2903dc5fbaea8150d21c371d75b88df2ca00600b0a"
+      ],
+      "repay": [
+        "https://bscscan.com//tx/0xcb9fbb1354ce20694bf451ae77b2347518fd8958cbd3f6927e39b1ee65947890"
+      ],
+      "withdraw": [
+        "https://bscscan.com//tx/0x15829f64c6a91cf322c111dd0e911fa49e381473c0c84680c00463f5db4f350d"
+      ]
+    },
+    "FDUSD": {
+      "supply": [
+        "https://bscscan.com/tx/0xbbe2a3d5e31f9303653678f12c1ee47205996c4d1d2dd4b57f4699c60524d91e"
+      ],
+      "borrow": [
+        "https://bscscan.com//tx/0xa0dd3f20ce974c8732fcb8b75de9d8cd83b1d63c497334c7b685a67a5913777e"
+      ],
+      "repay": [
+        "https://bscscan.com//tx/0xedf8527d884beaac6ba53b49a4b90d4784f083e541d85ab5db37ac1b990e7c34"
+      ],
+      "withdraw": [
+        "https://bscscan.com//tx/0x55933941b98012d7b4338083778e502fe60cd983913e4f9833dd6ad4c0207ae4"
+      ]
+    }
   }
 }

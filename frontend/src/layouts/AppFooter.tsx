@@ -22,22 +22,22 @@ const StyledLink = styled(Link)<StyledLinkProps>(({ theme }) => ({
 
 const FOOTER_ICONS = [
   {
-    href: 'https://hey.xyz/u/aave',
+    href: 'https://www.instagram.com/aqualoandefi',
     icon: <LensLogoIcon />,
     title: 'Aqualoan',
   },
   {
-    href: 'https://twitter.com/aave',
+    href: 'https://x.com/aqualoandefi',
     icon: <Twitter />,
     title: 'Lens',
   },
   {
-    href: 'https://discord.com/invite/aave',
+    href: 'https://discord.gg/yjSp9RpRNb',
     icon: <DiscordIcon />,
     title: 'Discord',
   },
   {
-    href: 'https://github.com/aave',
+    href: 'https://github.com/techaqualoan',
     icon: <GitHub />,
     title: 'Github',
   },
