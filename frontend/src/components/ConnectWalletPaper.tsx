@@ -36,9 +36,9 @@ export const ConnectWalletPaper = ({
         ...sx,
       }}
     >
-      <Image src='/public/walletbg.png' width={0} height={0} layout="fill" style={{ opacity: '0.2' }} alt="" />
+      <Image src='/walletbg.png' width={0} height={0} layout="fill" style={{ opacity: '0.2' }} alt="" />
       <Box>
-        <Image src='/public/logo.png' width={200} height={200} alt={''} />
+        <Image src='/logo.png' width={200} height={200} alt={''} />
       </Box>
       <>
         {loading ? (
