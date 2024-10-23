@@ -32,7 +32,8 @@ module.exports = withBundleAnalyzer({
   trailingSlash: true,
   pageExtensions,
   images: { 
-    disableStaticImages: true, 
+    disableStaticImages: true,
+    domains: ['silver-thirsty-damselfly-699.mypinata.cloud'] 
       // loader: 'imgix', // or 'cloudinary', 'akamai', etc. 
       // path: '/', // Set your custom path 
   }, 
