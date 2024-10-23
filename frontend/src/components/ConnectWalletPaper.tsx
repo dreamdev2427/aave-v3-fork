@@ -1,12 +1,11 @@
 import { ReactNode } from 'react';
-// import Image from 'next/image';
+import Image from 'next/image';
 import { Box, CircularProgress, Paper, PaperProps, Typography } from '@mui/material';
 import { Trans } from '@lingui/macro';
-
-// import LandingGhost from '/public/logo.png';
-// import WalletBg from '/public/walletbg.png';
-
 import { ConnectWalletButton } from './WalletConnection/ConnectWalletButton';
+
+const walletBgUrl = 'https://silver-thirsty-damselfly-699.mypinata.cloud/ipfs/QmeRNmZzhr4ekeTVqsAiKu62PC8LSWjBXAbbzU3j8GjVTZ'
+const logoUrl = 'https://silver-thirsty-damselfly-699.mypinata.cloud/ipfs/QmNvBZiNigAEDakdZjHqWQyJai3YU3EzPo5dDZ4QqpQ5K5'
 
 interface ConnectWalletPaperProps extends PaperProps {
   loading?: boolean;
@@ -36,11 +35,11 @@ export const ConnectWalletPaper = ({
         ...sx,
       }}
     >
-      <img src={`/walletbg.png`} width = "100%" height="100%" style={{ opacity: '0.2' }} alt='' />
-      {/* <Image src='/walletbg.png' width={0} height={0} layout="fill" style={{ opacity: '0.2' }} alt="" /> */}
+      {/* <img src={`/walletbg.png`} width = "100%" height="100%" style={{ opacity: '0.2' }} alt='' /> */}
+      <Image src={walletBgUrl} width={0} height={0} layout="fill" style={{ opacity: '0.2' }} alt="" />
       <Box>
-        <img src={`/walletbg.png`} width = "200px" height="200px" alt='' />
-        {/* <Image src='/logo.png' width={200} height={200} alt={''} /> */}
+        {/* <img src={`/logo.png`} width = "200px" height="200px" alt='' /> */}
+        <Image src={logoUrl} width={200} height={200} alt={''} />
       </Box>
       <>
         {loading ? (
