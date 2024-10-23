@@ -91,15 +91,15 @@ export function AppFooter() {
         setFeedbackOpen(true);
       },
     },
-    {
-      href: '/',
-      label: <Trans>Manage analytics</Trans>,
-      key: 'Manage analytics',
-      onClick: (event: React.MouseEvent) => {
-        event.preventDefault();
-        setAnalyticsConfigOpen(true);
-      },
-    },
+    // {
+    //   href: '/',
+    //   label: <Trans>Manage analytics</Trans>,
+    //   key: 'Manage analytics',
+    //   onClick: (event: React.MouseEvent) => {
+    //     event.preventDefault();
+    //     setAnalyticsConfigOpen(true);
+    //   },
+    // },
   ];
 
   return (

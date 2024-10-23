@@ -31,7 +31,9 @@ module.exports = withBundleAnalyzer({
   // assetPrefix: "./",
   trailingSlash: true,
   pageExtensions,
-  images: {
-    disableStaticImages: true,
-  },
+  images: { 
+    disableStaticImages: true, 
+      loader: 'imgix', // or 'cloudinary', 'akamai', etc. 
+      path: '/', // Set your custom path 
+  }, 
 });
