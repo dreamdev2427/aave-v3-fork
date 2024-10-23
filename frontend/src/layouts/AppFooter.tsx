@@ -56,8 +56,7 @@ const FOOTER_ICONS = [
 ];
 
 export function AppFooter() {
-  const [setAnalyticsConfigOpen, setFeedbackOpen] = useRootStore((store) => [
-    store.setAnalyticsConfigOpen,
+  const [setFeedbackOpen] = useRootStore((store) => [
     store.setFeedbackOpen,
   ]);
 
