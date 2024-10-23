@@ -73,15 +73,15 @@ export function AppFooter() {
     //   key: 'Privacy',
     // },
     {
-      href: 'https://davidsparker0417.gitbook.io/aqualoan',
+      href: 'https://aqualoan.gitbook.io/aqualoan/',
       label: <Trans>Docs</Trans>,
       key: 'Docs',
     },
-    {
-      href: 'https://davidsparker0417.gitbook.io/aqualoan-faq',
-      label: <Trans>FAQS</Trans>,
-      key: 'FAQS',
-    },
+    // {
+    //   href: 'https://davidsparker0417.gitbook.io/aqualoan-faq',
+    //   label: <Trans>FAQS</Trans>,
+    //   key: 'FAQS',
+    // },
     {
       href: 'https://discord.gg/yjSp9RpRNb',
       label: <Trans>Send feedback</Trans>,
