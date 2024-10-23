@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import { Box, CircularProgress, Paper, PaperProps, Typography } from '@mui/material';
 import { Trans } from '@lingui/macro';
 
@@ -36,9 +36,11 @@ export const ConnectWalletPaper = ({
         ...sx,
       }}
     >
-      <Image src='/walletbg.png' width={0} height={0} layout="fill" style={{ opacity: '0.2' }} alt="" />
+      <img src={`/walletbg.png`} width = "100%" height="100%" style={{ opacity: '0.2' }} alt='' />
+      {/* <Image src='/walletbg.png' width={0} height={0} layout="fill" style={{ opacity: '0.2' }} alt="" /> */}
       <Box>
-        <Image src='/logo.png' width={200} height={200} alt={''} />
+        <img src={`/walletbg.png`} width = "200px" height="200px" alt='' />
+        {/* <Image src='/logo.png' width={200} height={200} alt={''} /> */}
       </Box>
       <>
         {loading ? (
