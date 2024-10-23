@@ -31,10 +31,10 @@ module.exports = withBundleAnalyzer({
   // assetPrefix: "./",
   trailingSlash: true,
   pageExtensions,
-  images: { 
+  images: {
     disableStaticImages: true,
-    domains: ['silver-thirsty-damselfly-699.mypinata.cloud'] 
-      // loader: 'imgix', // or 'cloudinary', 'akamai', etc. 
-      // path: '/', // Set your custom path 
-  }, 
+    domains: ['silver-thirsty-damselfly-699.mypinata.cloud'],
+    loader: 'imgix', // or 'cloudinary', 'akamai', etc. 
+    path: '/', // Set your custom path 
+  },
 });
