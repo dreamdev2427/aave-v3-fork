@@ -33,7 +33,7 @@ module.exports = withBundleAnalyzer({
   pageExtensions,
   images: { 
     disableStaticImages: true, 
-      loader: 'imgix', // or 'cloudinary', 'akamai', etc. 
-      path: '/', // Set your custom path 
+      // loader: 'imgix', // or 'cloudinary', 'akamai', etc. 
+      // path: '/', // Set your custom path 
   }, 
 });
