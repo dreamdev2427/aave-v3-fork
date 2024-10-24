@@ -127,6 +127,7 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
   // connect to the wallet specified by wallet type
   const connectWallet = useCallback(
     async (wallet: WalletType) => {
+      console.log(`[DAVID] connectWallet :: walletType =`, wallet)
       setLoading(true);
       try {
         const connector: AbstractConnector = getWallet(wallet, chainId, currentChainId);
