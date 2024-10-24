@@ -37,11 +37,10 @@ export class WalletConnectConnector extends AbstractConnector {
       chains: [defaultChainId],
       optionalChains: supportedChainIds,
       rpcMap,
-      projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID,
+      projectId: "d46ea5bb30197febe9f847915d0fe285", //process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID,
       showQrModal: true,
     };
 
-    console.log(`[DAVID] projectId =`, process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID)
     this.handleChainChanged = this.handleChainChanged.bind(this);
     this.handleAccountsChanged = this.handleAccountsChanged.bind(this);
     this.handleDisconnect = this.handleDisconnect.bind(this);
