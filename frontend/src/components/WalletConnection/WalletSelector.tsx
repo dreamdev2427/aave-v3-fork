@@ -76,6 +76,7 @@ const WalletRow = ({ walletName, walletType }: WalletRowProps) => {
   };
 
   const connectWalletClick = () => {
+    console.log(`[DAVID](connectWalletClick)`)
     trackEvent(AUTH.CONNECT_WALLET, { walletType: walletType, walletName: walletName });
     connectWallet(walletType);
   };
