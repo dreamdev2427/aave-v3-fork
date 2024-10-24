@@ -137,9 +137,9 @@ export const Web3ContextProvider: React.FC<{ children: ReactElement }> = ({ chil
           setReadOnlyMode(false);
         }
 
-        if (connector instanceof WalletConnectConnector) {
-          connector.walletConnectProvider = undefined;
-        }
+        // if (connector instanceof WalletConnectConnector) {
+        //   connector.walletConnectProvider = undefined;
+        // }
 
         console.log(`[DAVID](connectWallet) :: connector =`, connector)
         await activate(connector, undefined, true);
