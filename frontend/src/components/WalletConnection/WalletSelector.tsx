@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro';
-import { Box, Button, InputBase, Link, Typography, useMediaQuery, useTheme } from '@mui/material';
+import { Box, Button, InputBase, Typography, useMediaQuery, useTheme } from '@mui/material';
 import { UnsupportedChainIdError } from '@web3-react/core';
 import { NoEthereumProviderError } from '@web3-react/injected-connector';
 import { utils } from 'ethers';
