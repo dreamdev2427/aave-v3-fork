@@ -9,7 +9,7 @@ if (process.env.NEXT_PUBLIC_ENABLE_STAKING === 'true') pageExtensions.push('stak
 
 /** @type {import('next').NextConfig} */
 module.exports = withBundleAnalyzer({
-  webpack(config) {
+  webpack(config, {isServer}) {
     config.module.rules.push({
       test: /\.svg$/i,
       issuer: /\.[jt]sx?$/,
@@ -22,6 +22,14 @@ module.exports = withBundleAnalyzer({
             },
           },
         },
+        // {
+        //   loader: 'file-loader',
+        //   options: {
+        //     publicPath: `/_next/static/media/`,
+        //     outputPath: `${isServer ? '../' : ''}static/media/`,
+        //     name: '[name].[hash:8].[ext]',
+        //   },
+        // }
       ],
     });
     config.experiments = { topLevelAwait: true };
@@ -32,9 +40,11 @@ module.exports = withBundleAnalyzer({
   trailingSlash: true,
   pageExtensions,
   images: {
+    // unoptimized: true,
     disableStaticImages: true,
-    domains: ['silver-thirsty-damselfly-699.mypinata.cloud'],
-    loader: 'imgix', // or 'cloudinary', 'akamai', etc. 
+    domains: ['https://ik.imagekit.io/cykpetgtn'],
+    loader: 'custom',
+    loaderFile: './my/image/loader.js',
     path: '/', // Set your custom path 
   },
 });

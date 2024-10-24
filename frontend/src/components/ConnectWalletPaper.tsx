@@ -4,8 +4,10 @@ import { Box, CircularProgress, Paper, PaperProps, Typography } from '@mui/mater
 import { Trans } from '@lingui/macro';
 import { ConnectWalletButton } from './WalletConnection/ConnectWalletButton';
 
-const walletBgUrl = 'https://silver-thirsty-damselfly-699.mypinata.cloud/ipfs/QmeRNmZzhr4ekeTVqsAiKu62PC8LSWjBXAbbzU3j8GjVTZ'
-const logoUrl = 'https://silver-thirsty-damselfly-699.mypinata.cloud/ipfs/QmNvBZiNigAEDakdZjHqWQyJai3YU3EzPo5dDZ4QqpQ5K5'
+const walletBgUrl = 'https://ik.imagekit.io/cykpetgtn/walletbg.png'
+const logoUrl = 'https://ik.imagekit.io/cykpetgtn/logo.png'
+// const walletBgUrl = '/walletbg.png'
+// const logoUrl = '/logo.png'
 
 interface ConnectWalletPaperProps extends PaperProps {
   loading?: boolean;
@@ -35,11 +37,17 @@ export const ConnectWalletPaper = ({
         ...sx,
       }}
     >
-      {/* <img src={`/walletbg.png`} width = "100%" height="100%" style={{ opacity: '0.2' }} alt='' /> */}
-      <Image src={walletBgUrl} width={0} height={0} layout="fill" style={{ opacity: '0.2' }} alt="" />
+      <Image 
+        src={walletBgUrl} 
+        width={0} 
+        height={0} 
+        layout="fill" 
+        style={{ opacity: '0.2' }} 
+        alt="" 
+        unoptimized
+      />
       <Box>
-        {/* <img src={`/logo.png`} width = "200px" height="200px" alt='' /> */}
-        <Image src={logoUrl} width={200} height={200} alt={''} />
+        <Image src={logoUrl} width={200} height={200} alt={''} unoptimized/>
       </Box>
       <>
         {loading ? (

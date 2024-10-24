@@ -239,14 +239,14 @@ export const WalletSelector = () => {
           <Trans>Please enter a valid wallet address.</Trans>
         </Typography>
       )}
-      <Typography variant="description" sx={{ mt: '22px', mb: '30px', alignSelf: 'center' }}>
+      {/* <Typography variant="description" sx={{ mt: '22px', mb: '30px', alignSelf: 'center' }}>
         <Trans>
           Need help connecting a wallet?{' '}
           <Link href="https://docs.aave.com/faq/troubleshooting" target="_blank" rel="noopener">
             Read our FAQ
           </Link>
         </Trans>
-      </Typography>
+      </Typography> */}
       <Typography variant="helperText">
         <Trans>
           Wallets are provided by External Providers and by selecting you agree to Terms of those
