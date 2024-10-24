@@ -133,7 +133,10 @@ export const SwitchModal = () => {
 
   const [selectedChainId, setSelectedChainId] = useState(() => {
     if (supportedNetworksWithEnabledMarket.find((elem) => elem.chainId === currentChainId))
+    {
+      console.log(`[DAVID] currentChainId =`, currentChainId)
       return currentChainId;
+    }
     return defaultNetwork.chainId;
   });
 
