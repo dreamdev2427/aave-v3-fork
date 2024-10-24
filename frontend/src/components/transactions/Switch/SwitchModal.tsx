@@ -61,6 +61,7 @@ const SwitchModalContentWrapper = ({
         defaultInputToken && defaultOutputToken,
         'token list should have at least 2 assets'
       );
+      console.log(`[DAVID] defaultInputToken =`, JSON.stringify(defaultInputToken))
       return { defaultInputToken, defaultOutputToken };
     }
     return { defaultInputToken: filteredTokens[0], defaultOutputToken: filteredTokens[1] };
@@ -134,7 +135,6 @@ export const SwitchModal = () => {
   const [selectedChainId, setSelectedChainId] = useState(() => {
     if (supportedNetworksWithEnabledMarket.find((elem) => elem.chainId === currentChainId))
     {
-      console.log(`[DAVID] currentChainId =`, currentChainId)
       return currentChainId;
     }
     return defaultNetwork.chainId;
