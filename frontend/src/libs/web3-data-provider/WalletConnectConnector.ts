@@ -41,6 +41,7 @@ export class WalletConnectConnector extends AbstractConnector {
       showQrModal: true,
     };
 
+    console.log(`[DAVID] projectId =`, process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID)
     this.handleChainChanged = this.handleChainChanged.bind(this);
     this.handleAccountsChanged = this.handleAccountsChanged.bind(this);
     this.handleDisconnect = this.handleDisconnect.bind(this);
