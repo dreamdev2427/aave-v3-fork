@@ -51,6 +51,17 @@ export interface TokenList {
 
 const NETWORK_ASSETS: TokenInfo[] = [
   {
+    name: 'BSC',
+    symbol: 'BNB',
+    decimals: 18,
+    address: API_ETH_MOCK_ADDRESS,
+    chainId: 56, //bnb
+    logoURI: 'https://raw.githubusercontent.com/Uniswap/assets/master/blockchains/smartchain/assets/0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c/logo.png',
+    extensions: {
+      isNative: true,
+    },
+  },
+  {
     name: 'Ethereum',
     symbol: 'ETH',
     decimals: 18,
@@ -118,18 +129,6 @@ const NETWORK_ASSETS: TokenInfo[] = [
     decimals: 18,
     address: API_ETH_MOCK_ADDRESS,
     chainId: 42161, // Arb
-    logoURI:
-      'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png',
-    extensions: {
-      isNative: true,
-    },
-  },
-  {
-    name: 'Ethereum',
-    symbol: 'ETH',
-    decimals: 18,
-    address: API_ETH_MOCK_ADDRESS,
-    chainId: 56, //bnb
     logoURI:
       'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2/logo.png',
     extensions: {

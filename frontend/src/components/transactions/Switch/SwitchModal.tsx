@@ -35,7 +35,8 @@ const getFilteredTokens = (chainId: number): TokenInfoWithBalance[] => {
     return { ...token, balance: '0' };
   });
   const realChainId = getNetworkConfig(chainId).underlyingChainId ?? chainId;
-  return transformedTokens.filter((token) => token.chainId === realChainId);
+  const filteredTokens = transformedTokens.filter((token) => token.chainId === realChainId);
+  return filteredTokens
 };
 
 const SwitchModalContentWrapper = ({
@@ -61,7 +62,6 @@ const SwitchModalContentWrapper = ({
         defaultInputToken && defaultOutputToken,
         'token list should have at least 2 assets'
       );
-      console.log(`[DAVID] defaultInputToken =`, JSON.stringify(defaultInputToken))
       return { defaultInputToken, defaultOutputToken };
     }
     return { defaultInputToken: filteredTokens[0], defaultOutputToken: filteredTokens[1] };
