@@ -2,7 +2,7 @@ import { Trans } from '@lingui/macro';
 import { GitHub, Twitter } from '@mui/icons-material';
 import { Box, styled, SvgIcon, Typography } from '@mui/material';
 import { Link } from 'src/components/primitives/Link';
-import { useRootStore } from 'src/store/root';
+// import { useRootStore } from 'src/store/root';
 
 import DiscordIcon from '/public/icons/discord.svg';
 import InstagramIcon from '/public/icons/instagram.svg';
