@@ -118,8 +118,8 @@ export function AppFooter() {
       })}
     >
       <Box sx={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-        {FOOTER_LINKS.map((link) => (
-          <StyledLink onClick={link.onClick} key={link.key} href={link.href}>
+        {FOOTER_LINKS.map((link:any) => (
+          <StyledLink onClick={link.onClick ? link.onClick : () => {}} key={link.key} href={link.href}>
             <Typography variant="caption">{link.label}</Typography>
           </StyledLink>
         ))}
