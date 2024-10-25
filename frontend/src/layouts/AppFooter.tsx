@@ -56,9 +56,9 @@ const FOOTER_ICONS = [
 ];
 
 export function AppFooter() {
-  const [setFeedbackOpen] = useRootStore((store) => [
-    store.setFeedbackOpen,
-  ]);
+  // const [setFeedbackOpen] = useRootStore((store) => [
+  //   store.setFeedbackOpen,
+  // ]);
 
   const FOOTER_LINKS = [
     // {
