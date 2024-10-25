@@ -85,10 +85,10 @@ export function AppFooter() {
       href: 'https://discord.gg/yjSp9RpRNb',
       label: <Trans>Send feedback</Trans>,
       key: 'Send feedback',
-      onClick: (event: React.MouseEvent) => {
+      /*onClick: (event: React.MouseEvent) => {
         event.preventDefault();
         setFeedbackOpen(true);
-      },
+      },*/
     },
     // {
     //   href: '/',
