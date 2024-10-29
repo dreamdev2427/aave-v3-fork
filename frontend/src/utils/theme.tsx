@@ -5,6 +5,7 @@ import {
   ExclamationIcon,
   InformationCircleIcon,
 } from '@heroicons/react/outline';
+import { BorderColor } from '@mui/icons-material';
 import { SvgIcon, Theme, ThemeOptions } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -440,6 +441,17 @@ export function getThemedComponents(theme: Theme) {
               backgroundColor: '#383D51',
               '&:hover, &.Mui-focusVisible': {
                 backgroundColor: theme.palette.background.header,
+              },
+            },
+          },
+          {
+            props: { variant: 'contained' },
+            style: {
+              '&:hover, &.Mui-focusVisible': {
+                backgroundColor: theme.palette.background.header,
+                color: theme.palette.common.white,
+                border: `1px solid`,
+                borderColor: theme.palette.common.white,
               },
             },
           },
