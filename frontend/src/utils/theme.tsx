@@ -5,7 +5,6 @@ import {
   ExclamationIcon,
   InformationCircleIcon,
 } from '@heroicons/react/outline';
-import { BorderColor } from '@mui/icons-material';
 import { SvgIcon, Theme, ThemeOptions } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
