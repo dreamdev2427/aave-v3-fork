@@ -5544,6 +5544,21 @@ export const TOKEN_LIST: TokenList = {
       },
     },
     {
+      name: 'USDCoin',
+      address: '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
+      symbol: 'USDC',
+      decimals: 18,
+      chainId: 10,
+      logoURI: 'https://ethereum-optimism.github.io/data/USDC/logo.png',
+      extensions: {
+        bridgeInfo: {
+          '1': {
+            tokenAddress: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+          },
+        },
+      },
+    },
+    {
       chainId: 10,
       address: '0x7F5c764cBc14f9669B88837ca1490cCa17c31607',
       name: 'USDCoin (Bridged from Ethereum)',
