@@ -95,7 +95,6 @@ export const SwitchAssetInput = ({
     handleClose();
   };
 
-  console.log(`[DAVID] selectedAsset =`, JSON.stringify(selectedAsset))
   const { erc20Service } = useSharedDependencies();
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
