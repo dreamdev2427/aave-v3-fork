@@ -138,7 +138,7 @@ export const SupplyActions = React.memo(
 
         let response: TransactionResponse;
         let action = ProtocolAction.default;
-
+        console.log(`[DAVID] ------ SUPPLY`)
         // determine if approval is signature or transaction
         // checking user preference is not sufficient because permit may be available but the user has an existing approval
         if (usePermit && signatureParams) {
@@ -149,9 +149,11 @@ export const SupplyActions = React.memo(
             reserve: poolAddress,
             deadline: signatureParams.deadline,
           });
-
+          console.log(`[DAVID] ------ SUPPLY (1.1)`)
           signedSupplyWithPermitTxData = await estimateGasLimit(signedSupplyWithPermitTxData);
+          console.log(`[DAVID] ------ SUPPLY (1.2)`)
           response = await sendTx(signedSupplyWithPermitTxData);
+          console.log(`[DAVID] ------ SUPPLY (1.3)`)
 
           await response.wait(1);
         } else {
@@ -160,18 +162,22 @@ export const SupplyActions = React.memo(
             amount: parseUnits(amountToSupply, decimals).toString(),
             reserve: poolAddress,
           });
+          console.log(`[DAVID] ------ SUPPLY (2.1)`)
           supplyTxData = await estimateGasLimit(supplyTxData);
+          console.log(`[DAVID] ------ SUPPLY (2.2)`)
           response = await sendTx(supplyTxData);
-
+          console.log(`[DAVID] ------ SUPPLY (2.3)`)
           await response.wait(1);
         }
 
+        console.log(`[DAVID] ------ SUPPLY (3)`)
         setMainTxState({
           txHash: response.hash,
           loading: false,
           success: true,
         });
 
+        console.log(`[DAVID] ------ SUPPLY (4)`)
         addTransaction(response.hash, {
           action,
           txState: 'success',
@@ -182,6 +188,7 @@ export const SupplyActions = React.memo(
 
         queryClient.invalidateQueries({ queryKey: queryKeysFactory.pool });
       } catch (error) {
+        console.log(`[DAVID] ------ SUPPLY (ERROR)`)
         const parsedError = getErrorTextFromError(error, TxAction.GAS_ESTIMATION, false);
         setTxError(parsedError);
         setMainTxState({
