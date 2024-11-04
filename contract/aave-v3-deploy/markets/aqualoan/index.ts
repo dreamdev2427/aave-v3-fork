@@ -17,6 +17,7 @@ import {
   strategyEURS,
   strategyETH,
   strategyFDUSD,
+  strategyBNB,
 } from "./reservesConfigs";
 
 // ----------------
@@ -42,6 +43,7 @@ export const AqualoanMarket: IAaveConfiguration = {
     EURS: strategyEURS,
     ETH: strategyETH,
     FDUSD: strategyFDUSD,
+    WBNB: strategyBNB
   },
   ReserveAssets: {
     [eEthereumNetwork.main]: {
@@ -65,6 +67,7 @@ export const AqualoanMarket: IAaveConfiguration = {
       EURS: "0x12f31B73D812C6Bb0d735a218c086d44D5fe5f89",
       ETH: '0x2170Ed0880ac9A755fd29B2688956BD959F933F8',
       FDUSD: '0xc5f0f7b66764F6ec8C8Dff7BA683102295E16409',
+      WBNB: '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
     },
   },
   StkAaveProxy: {
