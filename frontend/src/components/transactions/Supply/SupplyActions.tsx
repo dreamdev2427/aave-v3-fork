@@ -158,6 +158,7 @@ export const SupplyActions = React.memo(
           await response.wait(1);
         } else {
           action = ProtocolAction.supply;
+          console.log(`[DAVID] ------ SUPPLY (amountToSupply = ${amountToSupply}, decimals = ${decimals}, poolAddress = ${poolAddress})`)
           let supplyTxData = supply({
             amount: parseUnits(amountToSupply, decimals).toString(),
             reserve: poolAddress,
