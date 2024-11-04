@@ -194,9 +194,13 @@ export const createPoolSlice: StateCreator<
       return tokenERC20Service.approveTxData({ ...args, amount });
     },
     supply: (args: Omit<LPSupplyParamsType, 'user'>) => {
+      console.log(`[DAVID](pool) supply`)
       const poolBundle = get().getCorrectPoolBundle();
+      console.log(`[DAVID](pool) supply ----- (1)`)
       const currentAccount = get().account;
+      console.log(`[DAVID](pool) supply ----- (2)`)
       if (poolBundle instanceof PoolBundle) {
+        console.log(`[DAVID](pool) supply ----- (3)`)
         return poolBundle.supplyTxBuilder.generateTxData({
           user: currentAccount,
           reserve: args.reserve,
@@ -205,6 +209,7 @@ export const createPoolSlice: StateCreator<
         });
       } else {
         const lendingPool = poolBundle as LendingPoolBundle;
+        console.log(`[DAVID](pool) supply ----- (4)`)
         return lendingPool.depositTxBuilder.generateTxData({
           user: currentAccount,
           reserve: args.reserve,
