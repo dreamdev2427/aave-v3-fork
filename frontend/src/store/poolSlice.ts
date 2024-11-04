@@ -197,7 +197,6 @@ export const createPoolSlice: StateCreator<
       const poolBundle = get().getCorrectPoolBundle();
       const currentAccount = get().account;
       if (poolBundle instanceof PoolBundle) {
-        console.log(`[DAVID](pool) supply ----- (1) args =`, JSON.stringify(args))
         return poolBundle.supplyTxBuilder.generateTxData({
           user: currentAccount,
           reserve: args.reserve,
