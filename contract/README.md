@@ -224,6 +224,6 @@ Please be aware that [Aave V3](https://github.com/aave/aave-v3-core) is under [B
 | AAVE-AToken-Aqualoan                    | 0x5FCCaCE44c3e6F6CE16815B1b1D1c9399f0aFF1C
 | AAVE-VariableDebtToken-Aqualoan         | 0x53c7D555262a85A5a33A8aa5EE0529901c4Bc8a5
 | AAVE-StableDebtToken-Aqualoan           | 0xd8476982b52b624fF27dea52C63d0216D1f024dd
-| EURS-AToken-Aqualoan                    | 0xCab7f712EFf726B4a1F73B9C45Dc1b3B114B26D4
-| EURS-VariableDebtToken-Aqualoan         | 0x2267a122E7703120d63cc5bEb7D5ff1D9C3B3686
-| EURS-StableDebtToken-Aqualoan           | 0xa723Af912d67Dd797C3E36d454Aa2D7d1e041c9f
+| BNB-AToken-Aqualoan                    | 0x2ED671186a86eEF55E7573466a10Da684bA1ca63
+| BNB-VariableDebtToken-Aqualoan         | 0x6C015bCc0ef40C5e808efc77Cf8815c7320049fB
+| BNB-StableDebtToken-Aqualoan           | 0xEEbf5807fa2BB6Ed78e507c9c0214d2E8af9e727
