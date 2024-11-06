@@ -108,6 +108,15 @@ const func: DeployFunction = async function ({
 func.id = `ReservesInit:${MARKET_NAME}:aave-v3-core@${V3_CORE_VERSION}`;
 
 func.tags = ["market", "init-reserves"];
+func.dependencies = [
+  "before-deploy",
+  "core",
+  "periphery-pre",
+  "provider",
+  "init-pool",
+  "oracles",
+];
+
 func.skip = async () => checkRequiredEnvironment();
 
 export default func;
